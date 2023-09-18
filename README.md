@@ -10,7 +10,8 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 ## Run steamlit app
 ```
 streamlit run dashboard.py
-![WhatsApp Image 2023-09-18 at 11 42 14](https://github.com/yudhiahmadi/dasboard_data/assets/87703066/1c555882-b16d-45f8-b3c2-af6b74f7d27d)
-
 ```
+
+![WhatsApp Image 2023-09-18 at 11 42 14](https://github.com/yudhiahmadi/dasboard_data/assets/87703066/2121e42e-6a76-4b0a-93f7-ac5ca6a496f5)
+
 
