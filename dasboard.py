@@ -300,7 +300,7 @@ with tab3:
 
     st.subheader("Kategori Produk")
     colors = ["#72BCD4", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3","#D3D3D3", "#D3D3D3", "#D3D3D3"]
-    fig, ax = plt.subplots(figsize=(13, 15))
+    fig, ax = plt.subplots(figsize=(13, 45))
     sns.barplot(y=penjualan.index, x=penjualan.values, palette=colors)
     ax.set_title('Revenue oleh Product Category')
     ax.set_xlabel('Total Revenue (in R$)')
@@ -348,9 +348,9 @@ with tab6:
     st.header("Analisis Recency, Frequency, dan Monetary")
     col1, col2 = st.columns(2)
     fig, ax = plt.subplots(nrows=3, ncols=1, figsize=(13, 15))
-    sns.histplot(rfm_df['Recency'], bins=50, ax=ax[0], kde=True).set_title('Recency Distribution')
-    sns.histplot(rfm_df['Frequency'], bins=50, ax=ax[1]).set_title('Frequency Distribution')
-    sns.histplot(rfm_df['Monetary'], bins=50, ax=ax[2]).set_title('Monetary Distribution')
+    sns.histplot(rfm_df['Recency'], bins=50, ax=ax[0], kde=True)
+    sns.histplot(rfm_df['Frequency'], bins=50, ax=ax[1])
+    sns.histplot(rfm_df['Monetary'], bins=50, ax=ax[2])
     st.pyplot(fig)
 
     with col1:
