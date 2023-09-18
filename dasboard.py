@@ -308,7 +308,7 @@ with tab3:
     st.pyplot(fig)
 
     st.subheader("Rekomendasi")
-    st.write('Setelah melakukan analisis terhadap kepuasan pelanggan rata-rata pelanggan kita tergolong puasa dengan rating 4-5. Disamping itu, ternyata produk yang paling banyak terjual adalah kategori bed_bath_table, dan yang paling rendah adalah security_and_service. Saya merekomendasikan')
+    st.write('Setelah melakukan analisis terhadap kepuasan pelanggan rata-rata pelanggan kita tergolong puas dengan rating 4-5. Disamping itu, ternyata produk yang paling banyak terjual adalah kategori bed_bath_table, dan yang paling rendah adalah security_and_service. Saya merekomendasikan')
     st.write('Membuat perbaikan produk terhadap kategori security_and_service karena rating yang buruk (dibawah 3). Jika ingin meningkatkan penjualan kita perlu memperbaiki produk ini. Atau jika perusahaan dirasa tidak mampu memperbaikinya maka kita bisa hilangkan saja karena produk ini juga terjual hanya sedikit. Hal ini tentu dilema, Namun jika tujuan awal kita adalah memenuhi kepuasan pelanggan maka kita harus memperbaiki produk tersebut hingga produk tersebut sehingga membuat rating kita naik.')
 
 with tab4:
